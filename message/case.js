@@ -2109,8 +2109,8 @@ let pp = await conn.profilePictureUrl(who).catch(_ => 'https://cdn.pixabay.com/p
 let name = await conn.getName(who)
 
 await conn.sendContactArray(m.chat, [ 
-[`${nomerOwner}@s.whatsapp.net`, `${ownerName}`, `Developer Bot`, `✍️ Masih Belajar Bwang Jangan Dibully`],
-[`${conn.user.jid.split('@')[0]}`, `${await conn.getName(conn.user.jid)}`, `🤖 I'm Bot WhatsApp`, `⚠️ Please Dont Spam Block or Banned`]
+[`${nomerOwner}@s.whatsapp.net`, `${ownerName}`, `Developer Bot`, `✍️ Masih Belajar Bwang Jangan Dibully`]/*/,
+[`${conn.user.jid.split('@')[0]}`, `${await conn.getName(conn.user.jid)}`, `🤖 I'm Bot WhatsApp`, `⚠️ Please Dont Spam Block or Banned`]*/
 ], m)
 await sendAnti(`Hii 👋, Chat Me ? Jangan Basa Basi To The Point Aje!`)
 } 
