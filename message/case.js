@@ -6399,7 +6399,7 @@ Exp : +999
 Bonus : +${poin} Saldo`.trim()
 conn.tebakgambar[id] = [
 conn.sendImage(from, json.img , teks, m),
-json,
+json, poin,
 setTimeout(() => {
 if (conn.tebakgambar[id])
 setReply(`Waktu game telah habis
@@ -6429,7 +6429,7 @@ Exp : +999
 Bonus : +${poin} Saldo`.trim()
 conn.tebakbendera[id] = [
 conn.sendImage(from, json.img , teks, m),
-json,
+json, poin,
 setTimeout(() => {
 if (conn.tebakbendera[id]) 
 setReply(`Waktu game telah habis
