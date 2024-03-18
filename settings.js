@@ -22,7 +22,7 @@ global.Console = false
 global.publik = false
 global.limitCount = 15 // Ganti sesuka luh
 global.gcounti = { 'prem' : 60, 'user' : 20 } // Ganti sesuka luh
-global.copyright = `� FanzBotzz` // Ganti sesuka luh
+global.copyright = `� FanzBotzz` // Ganti sesuka luh
 global.baileysVersion = `Baileys version ${version}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ`
 global.textT = `Baileys version ${version}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ`
 global.fake1 = "FanzOffc" // Ganti sesuka luh
@@ -48,7 +48,7 @@ global.filestackApi ="" //daftar di filestack
 // OPSI PAIRING BY FANZ
 global.usePairingCode = true // false untuk QR
 // ISI NOMOR BOTNYA DISINI
-global.pairingNumber = "6285607959390" // gunakan tanpa + dan spasi
+global.pairingNumber = "6287761402465" // gunakan tanpa + dan spasi
 
 
 global.FanzUrl = 'https://telegra.ph/file/ad485f9885a583997db33.jpg'
