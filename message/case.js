@@ -856,7 +856,7 @@ await sleep(1500)
 stikdel(from)
 }
 }
-//ANTI BADWORD 
+/*/ANTI BADWORD 
 if (isGroup && !isOwner && !isGroupAdmins && !itsMe){ 
 if (badword.includes(budy)) {
 if (isCountKasar(sender, _toxic)){
@@ -878,7 +878,7 @@ addCountKasar(sender, _toxic)
 sendAnti(`Kamu terdeteksi berkata kasar! jangan ulangi lagi atau kamu akan dikick oleh bot`)
 }
 }
-}
+}*/
 //ANTI VIEWONCE 
 if ((type == 'viewOnceMessage' || isQuotedViewOnce) && (isAntiViewOnce || budy.startsWith("Readviewonce")))  {
 const { downloadContentFromMessage } = (await import('@adiwajshing/baileys')).default
@@ -5554,13 +5554,18 @@ setReply(`Sukses`)
 }).catch(() => reply(mess.error.api))
 break
 case 'listonline': {
+if (!isGroupAdmins && !isOwner) return onlyAdmin()
+if (!isGroup) return setReply(mess.only.group)
+if (!isBotGroupAdmins) return setReply(mess.only.Badmin)
 let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : from
 let online = [...Object.keys(store.presences[id]), botNumber]
 conn.sendText(from, 'List Online:\n\n' + online.map(v => '⭔ @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
 }
 break
 case 'infoall': case 'tagall':{
+if (!isGroupAdmins && !isOwner) return onlyAdmin()
 if (!isGroup) return setReply(mess.only.group)
+if (!isBotGroupAdmins) return setReply(mess.only.Badmin)
 if(!q) {
 var inpo = "No inpo"
 } else var inpo = q
